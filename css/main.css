@@ -336,6 +336,7 @@ textarea {
 			 display: flex;
 			 justify-content: center;
 			 flex-flow: row wrap;
+			 border-bottom: 1px solid #c75f8f;
 		 }
 	
 		 .hero-area h1 {
@@ -363,6 +364,7 @@ textarea {
 			 flex-flow: row wrap;
 			 justify-content: center;
 			 align-items: center;
+			 border-bottom: 1px solid #c75f8f;
 		 }
 
 		 #portfolio h2 {
@@ -773,12 +775,11 @@ textarea {
 		}
 
 		.contact-section #email-header, .contact-section h3 {
-			font-size: 1.675em;
+			font-size: 1em;
 		}
 
 		.contact-section #email  {
-			font-weight: 500;
-			padding-left: 35px;
+			padding-left: 30px;
 		}
 
 		.contact-section h2 {
@@ -912,6 +913,10 @@ textarea {
 				 line-height: 1.6;
 				 padding-left: 45px;
 			 }
+
+			 .contact-section #email-header, .contact-section h3 {
+				font-size: 1.675em;
+			}
 
 			 .contact-section #email {
 				 font-size: 1.5em;
