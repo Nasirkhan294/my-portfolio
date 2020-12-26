@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Khandeveloper | Portfolio</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <script src="../script.js" defer></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -35,26 +36,32 @@
 <body>
 
   <!-- Add your site or application content here -->
-    <header>
-        <div class="content-wrapper">
-          <label class="logo"><span>Nasir</span><br>Khan</label>
-          <nav>
-            <ul>
-              <li><a class="active" href="#portfolio">portfolio</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="brand-title">Nasir Khan</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a class="active" href="../index.html">portfolio</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="https://docs.google.com/document/d/1qbIxKB6Y8h-SV6urWDu-i-xSiuDRXihtMJ2U41V-xj0/edit?usp=sharing" target="_blank">resume</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main>  
-      <section class="mission">
+      <section id="about">
         <h2><span>My Mission</span> - I want to make my client satisfied as always they wanted to be.</h2>
         <div class="content-wrapper">
           <h2><span>Hi.</span> I'm Nasir Khan!</h2>
           <div class="main"><p>I am a <span>Responsive Designer & Developer</span> who thrives on visual storytelling. When I'm not working, pushing side projects or getting lost in the rabbit hole of blogs & books, I can be found traveling, hiking and searching for new stories.</p></div>
-          <div class="mission-content">
+          <div class="about-content">
             <div id="div-1">
               <p>I was born and raised in Pakistan, but  <span>my real route</span> reach to United Arab Emirates. I owe my travel bug to being a first generation Pakistani with family all over the world - we were always on the go!</p>
             </div>
@@ -65,15 +72,15 @@
              <p><span>A fun fact:</span> As a true Pakistanian, I'm slightly abash to say that I only learned how to ride a plain ol'stationary bike 1 year ago, and have yet to learn to drive. But, the real takeaway is that I'm learning!</p>
             </div>
           </div>
-        </div>  <!-- mission content warpper ends -->
-      </section> <!-- contact info -->
+        </div>  <!-- about content warpper ends --> 
+      </section> 
     
       <section class="contact-section">
         <h1>Contact me, because you all need this.</h1>
         <div class="content-wrapper">
           <article>
             <figure>
-              <img src="../img/nasir-khan.png" alt="My image"/>
+              <img src="../img/nasir.jpg" alt="My image"/>
             </figure>
             <div>
               <h2>Like what you see?</h2>
@@ -137,9 +144,9 @@
       </div>
     </footer>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
