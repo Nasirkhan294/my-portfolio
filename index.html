@@ -19,16 +19,16 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Galada&family=Rye&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Source+Code+Pro:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Alice|Raleway&display=swap" rel="stylesheet"/>
    <!-- Font Awesome CDN version 5.15 -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <script src="https://kit.fontawesome.com/9faec82d34.js" crossorigin="anonymous"></script>
   
 
   <meta name="theme-color" content="#fafafa">
@@ -38,8 +38,8 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <nav class="navbar">
-      <div class="brand-title">Nasir Khan</div>
+    <nav id="navbar"  class="flex items-center justify-between">
+      <div class="brand-title"><span>NK</span> Elevator</div>
       <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -47,92 +47,260 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a class="active" href="#portfolio">portfolio</a></li>
-          <li><a href="about/index.html">about</a></li>       
-          <li><a href="https://docs.google.com/document/d/1qbIxKB6Y8h-SV6urWDu-i-xSiuDRXihtMJ2U41V-xj0/edit?usp=sharing" target="_blank">resume</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li> 
+          <li><a href= "#contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>  
         </ul>
+          <a href="#contact" class="hire-me"><button class="btn btn-secondary">Hire me</button></a>
       </div>
     </nav>
   </header>
- 
-  <section class="hero-area">
-    <div class="content-wrapper">
-      <h1>let's <span>code</span> something cool!</h1>
+
+  <section class="intro">
+    <h2 class="intro__heading">
+      <p>Hi there</p>
+      <span class="intro__heading__jumbo">I'm Nasir Khan</span>
+    </h2>
+    <div class="intro__img">
+      <img src="./img/nasir-khan.png" alt="" />
     </div>
+    <div class="intro__info">
+      <p class="intro__info__heading">
+        <strong>I'm a Responsive <span> Designer </span> & Developer </strong>
+      </p>
+      <p class="intro__info__content">
+        who thrives on visual storytelling. When I'm not working, pushing side projects   
+        or getting lost in the rabbit hole of blogs & books, I can be found traveling,
+        hiking and searching for new stories.
+      </p>
+    </div>
+    <ul class="intro__social">
+      <a href="https://twitter.com/NasirMa35888225" target="_blank" class="soc-icon tw"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.facebook.com/NASIRATTARY" target="_blank" class="soc-icon fb"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.linkedin.com/in/nasir-mahmood-8158a8176/" target="_blank" class="soc-icon ln"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/Nasirkhan294/" target="_blank" class="soc-icon gh"><i class="fab fa-github"></i></a>
+			<a href="https://www.instagram.com/nasir_khan294/" target="_blank" class="soc-icon in"><i class="fab fa-instagram"></i></a>
+    </ul>
   </section>
 
   <main>
+    <section id="about" class="about">
+      <h1 class="section-heading">About <span>Me</span></h1>
+      <div class="container-1 flex items-center about-inner-wrap">
+        <div class="flex-1">
+          <img class="about-me-img" src="./img/nasir.jpg" alt="">
+        </div>
+        <div class="flex-1 right">
+          <h3>Hi, I'm Nasir Khan</h3>
+          <p tabindex="0">
+            I started <span>Web-Designing </span>in 2020 as a way to help others commit to developing every area of their websites through error-free coding, debugging, elegant-design and user-friendly responsive site.
+            <span>My mission</span> is to walk you through to the unlimited potential within you and achieve what you’re truly capable of through self-development.
+            <span>NKelevator</span> is designed to be a source of development and inspiration which will lead you to reach your goals.
+          </p>
+          <ul>
+            <a href="https://twitter.com/NasirMa35888225" target="_blank" class="soc-icon tw"><i class="fab fa-twitter"></i></a>
+			      <a href="https://www.facebook.com/NASIRATTARY" target="_blank" class="soc-icon fb"><i class="fab fa-facebook"></i></a>
+					  <a href="https://www.linkedin.com/in/nasir-mahmood-8158a8176/" target="_blank" class="soc-icon ln"><i class="fab fa-linkedin"></i></a>
+					  <a href="https://github.com/Nasirkhan294/" target="_blank" class="soc-icon gh"><i class="fab fa-github"></i></a>
+					  <a href="https://www.instagram.com/nasir_khan294/" target="_blank" class="soc-icon in"><i class="fab fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="btn-wrapper">
+        <a href="#contact" class="hire-me"><button class="btn btn-secondary">Hire me</button></a>
+      </div>
+    </section>
     
-    <section id="portfolio">
-      <h2>my portfolio</h2>
-      <div class="content-wrapper">
-        <div class="portfolio-block-1">
-         <h3>My Portfolio Website</h3>
-         <a href="#header" target="_blank"><img src="img/my-portfolio.png" alt="Portfolio-site Image" /></a>
-         <p>HTML5 & CSS Responsive site.</p>
-         <p>I designed and coded this portfolio site for myself. It is fully responsive, coded with the mobile first strategy, and is viewable on mobile, tablet, and desktop.</p>
-        </div><!-- Portfolio Site Block -->
-        <div class="portfolio-block-2">
-         <h3>Unplugged Website</h3>
-         <a href="unplugged/index.html" target="_blank"><img src="img/unplugged.jpg" alt="Unplugged Image" /></a>
-         <p>HTML5 & CSS Website from photoshop design comp</p>
-         <p>This is a multi page, responsive website for a fictional music blog/website. It was coded from a photoshop design mock up. It is coded for mobile, tablet, and desktop. Working on this project taught me to create buttons, work with responive maps and images, and how to code mobile first.</p>
-        </div><!-- Unplugged Block -->
-        <div class="portfolio-block-3">
-         <h3>LOLCat Clock Project</h3>
-         <a href="lolcat-clock/index.html" target="_blank"><img src="img/lolcat-clock.jpg" alt="LOLCat Clock Image" /></a>
-         <p>HTML5 & JavaScript Responsive lolcat-clock</p>
-         <p>This is a working clock with different "alarm" settings... You know, you kind of have to see for yourself. I coded only the JavaScript on this project. It is best viewed on desktop. Working on this project introduced me to the DOM, adding events and event listeners, and selectors.</p>
-        </div><!-- LOLCat Clock -->
-        <div class= "portfolio-block-4">
-         <h3>Election Map Project</h3>
-         <a href="election-map/index.html" target="_blank"><img src="img/election-map.jpg" alt="Election Map Image" /></a>
-         <p>HTML5 & JavaScript Election-map</p>
-         <p>This is an interactive election map. I coded just the JavaScript for this project. This project gave me experience in working with third party code, using loops and arrays, and populating tables.</p>
-        </div><!-- Election Map -->
-      </div><!--content-wrapper ends-->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h1 class="section-heading"><span>My</span> Portfolio</h1>
+        <p>I provide high standard clean websites for your business solutions!</p>
+        <div class="card-wrapper">
+          <div id="react" class="card">
+            <h3>My Portfolio Website</h3>
+            <div class="overlay">
+              <a href="#header/index.html" ><p>HTML5, CSS3 & JavaScript Responsive site!<br> I designed and coded this website for my self. 
+                It is fully responsive, & mobile friendly website.</p></a>
+            </div>
+            <img src="img/my-portfolio.png" alt="portfolio" />
+          </div><!-- Portfolio Site Card -->
+          <div id="react" class="card">
+            <h3>Unplugged Website</h3>
+            <div class="overlay">
+              <a href="unplugged/index.html" target="_blank"><p>HTML5 & CSS3 Website from photoshop design comp!<br>Working on this multi pages
+                 mobile friendly website taught me how can I work with real client.  </p></a>
+            </div>
+            <img src="img/unplugged.jpg" alt="Unplugged Image" />
+          </div><!-- Unplugged Card -->
+          <div id="react" class="card">
+            <h3>Lolcat-Clock Project</h3>
+            <div class="overlay">
+              <a href="lolcat-clock/index.html" target="_blank"><p>HTML5, CSS3 & JavaScript Responsive lolcat-clock!<br>Working on this project 
+                introduced me to the 'DOM' adding events, events listeners & seletors.</p></a>
+            </div>
+            <img src="img/lolcat-clock.jpg" alt="LOLCat Clock Image" />
+          </div><!-- LOLCat Clock Card -->
+          <div id="react" class="card">
+            <h3>Election Map Project</h3>
+            <div class="overlay">
+              <a href="election-map/index.html" target="_blank"><p>HTML5, CSS3 & JavaScript Election-map!<br> This project gave me experience in 
+                working with third party code, using loops & arrays, and populating tables.</be></p></a> 
+            </div>
+            <img src="img/election-map.jpg" alt="Election Map Image" />
+          </div><!-- Election Map Card -->
+          <div id="react" class="card">
+            <h3>Rogue Picking Website</h3>
+            <div class="overlay">
+              <a href="rogue-pickings/index.html" target="_blank"><p>HTML & CSS Photoshop design comp!<br> This single page website allow me to design
+                 small and sweet sites as per client desires.</p></a> 
+            </div>
+            <img src="img/rogue.png" alt="Election Map Image" />
+          </div><!-- Election Map Card -->
+          <div id="react" class="card">
+            <h3>Jubilee Austen Site</h3>
+            <div class="overlay">
+              <a href="jubilee-austen/index.html" target="_blank"><p>HTML5 & CSS Website!<br> Working on this single page 
+                portfolio site taught me how to code elegant-design professional portfolio.</p></a> 
+            </div>
+            <img src="img/jubilee.png" alt="Election Map Image" />
+          </div><!-- Election Map Card -->
+        </div><!--Card-wrapper ends-->
+      </div>
     </section>
 
-  </main>
-
-  <footer>
-    <h2>let's connect</h2>
-    <div class="content-wrapper">
-      <div class="footer-content">
-        <div id="contact">
-          <h4>Hire me</h4>
-          <address>
-            <p>
-              00971-551313294<br>
-              <a class="email" href="mailto:nasirbhatti.nk@gmail.com">Hello@khandeveloper.me</a>
-            </p>
-          </address>
-        </div>
-        <div class="social">
-          <h4>Follow me</h4>
-          <div class="social-icons">
-            <p>
-             <a href="https://github.com/Nasirkhan294/" target="_blank"><i class="fab fa-github"></i></a>
-            </p>
-            <p>
-             <a href="https://twitter.com/NasirMa35888225" target="_blank"><i class="fab fa-twitter"></i></a>
-            </p>
-            <p>
-             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </p>
-            <p>
-             <a href="https://www.linkedin.com/in/nasir-mahmood-8158a8176/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <section id="services" class="services">
+      <div class="container">
+        <h1 class="section-heading"><span>My</span> Services</h1>
+        <p>I provide high standard elegant websites for your business solutions!</p>
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-globe"></i>
+            </div>
+            <h2>Websites</h2>
+            <p>We code standard quality UI and UX responsive sites. Our coded website must be mobile-friendly. 
+              Eventually, it releases your users' pain-points and allow them to hop into all pages easily. 
+              Want to give it a try? Feel free to contact us.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-search-plus"></i>
+            </div>
+            <h2>SEO</h2>
+            <p>Search Engine Optimization or Search Engine Results Page is an imperative part of a website. 
+              If you're anxious about your blog-post and need help to improve high standard keywords then we are here to help you.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-leaf"></i>
+            </div>
+            <h2>Web Design</h2>
+            <p>Don't have an idea which design will best for your business? No worry at all just follow the simple step and fill the form below.
+              We will catch you up and discuss your website's bits & pieces together to make it impressive.
             </p>
           </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-puzzle-piece"></i>
+            </div>
+            <h2>Web Development</h2>
+            <p>We are committed to pursue <strong>quality excellence</strong> as a core value in design,
+              contstruction & maintenance services to web-development field. We shall uphold a work culture where our services conform to contractual requirements & improve client satisfaction.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-id-card"></i>
+            </div>
+            <h2>Case Study</h2>
+            <p>Our proven stratgies will give you an overview of your ad's compaign first then let you decide to choose from. 
+              We know it's arduous to believe on someone, specially when it comes remotely. 
+              But don't put yourself in the mud just email us & lets discuss together.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa fa-3x fa-copyright"></i>
+            </div>
+            <h2>Copywriting</h2>
+            <p>An eye-catching copy not only increase the traffic on your website but also expand your business worth & make a boost in your sale. 
+              Is it seem daunting how to write a best copy? Worry not we're here to help you in every single step. Just email us.</p>
+          </div>
         </div>
-      </div> <!-- footer-content ends here -->
-    </div> <!-- content wrapper ends here -->
-    <div class="copywright">
-      <p>&copy; Copyright 2020 | Nasir khan.</p>
-    </div>
-  </footer>
+      </div>
+    </section>
 
+    <section id="freelancer" class="freelancer">
+      <h1 class="section-heading">I AM Available For Freelancer</h1>
+      <p>I provide high standard clean websites for your business solutions!</p>
+      <div class="btn-wrapper">
+        <button class="btn btn-primary">Download Cv</button>
+      </div>
+  </section>
+
+  </main>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h1 class="section-heading">Contact <span>Me</span></h1>
+      <p> I provide high standard clean websites for your business solutions!</p>
+      <div class="card-wrapper">
+        <div class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-address-book"></i>
+          </div>
+          <h2>Call me On</h2>
+          <h6>+971 551313294</h6>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-envelope"></i>
+          </div>
+          <h2>Email me at</h2>
+          <a href="mailto:hi@nasirbhatti.nk@gmail.com" id="email"><h6>nasirbhatti.nk@gmail.com</h6></a>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-handshake-o"></i>
+          </div>
+         <h2>Follow me on</h2>
+         <ul>
+            <a href="https://twitter.com/NasirMa35888225" target="_blank" class="soc-icon tw"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/NASIRATTARY" target="_blank" class="soc-icon fb"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/nasir-mahmood-8158a8176/" target="_blank" class="soc-icon ln"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Nasirkhan294/" target="_blank" class="soc-icon gh"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/nasir_khan294/" target="_blank" class="soc-icon in"><i class="fab fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+      <form action="">
+        <div class="input-wrap">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+        </div>
+        <div class="input-wrap-2">
+          <input type="text" placeholder="Your Subject....">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message...."></textarea>
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+<footer>
+    <div class="footer-socials">
+      <ul>
+        <a href="https://twitter.com/NasirMa35888225" target="_blank" class="soc-icon tw"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/NASIRATTARY" target="_blank" class="soc-icon fb"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/nasir-mahmood-8158a8176/" target="_blank" class="soc-icon ln"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Nasirkhan294/" target="_blank" class="soc-icon gh"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nasir_khan294/" target="_blank" class="soc-icon in"><i class="fab fa-instagram"></i></a>
+      </ul>
+    </div>
+    <div class="copyright">
+        Copyright 2021 | Nasir khan<br> All Right Reserved.
+    </div>
+</footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
